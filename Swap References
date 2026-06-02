@@ -1,0 +1,25 @@
+class Test {
+    int x;
+
+    Test(int x) {
+        this.x = x;
+    }
+}
+
+public class Main {
+
+    static void swap(Test a, Test b) {
+        Test temp = a;
+        a = b;
+        b = temp;
+    }
+
+    public static void main(String[] args) {
+        Test t1 = new Test(10);
+        Test t2 = new Test(20);
+
+        swap(t1, t2);
+
+        System.out.println(t1.x + " " + t2.x);
+    }
+}
