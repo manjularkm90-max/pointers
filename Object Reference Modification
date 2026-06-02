@@ -1,0 +1,15 @@
+class Test {
+    int x = 10;
+}
+
+public class Main {
+    public static void change(Test t) {
+        t.x = 50;
+    }
+
+    public static void main(String[] args) {
+        Test obj = new Test();
+        change(obj);
+        System.out.println(obj.x);
+    }
+}
